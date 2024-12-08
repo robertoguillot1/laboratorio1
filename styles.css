@@ -1,0 +1,80 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: rgb(188, 7, 7);
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 50%;
+}
+
+p {
+    text-align: justify;
+    margin: 10px 0;
+}
+
+/* Secciones */
+#about-me, #interests, #schedule, #contact, #social-media {
+    margin-bottom: 30px;
+}
+
+/* Tabla */
+table {
+    border: 1px solid rgb(188, 7, 7);
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+
+th, td {
+    border: 1px solid rgb(188, 7, 7);
+    padding: 10px;
+    text-align: center;
+}
+
+thead {
+    background-color: rgb(188, 7, 7);
+    color: white;
+}
+
+/* Formulario */
+form {
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: rgb(188, 7, 7);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(150, 6, 6);
+}
+
+/* Enlaces */
+a {
+    color: rgb(188, 7, 7);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

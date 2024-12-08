@@ -2,121 +2,91 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Página personal de Roberto Guillot">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Mi</title>
-    <meta name="description" content="Página personal de Roberto Guillot">
-    <meta name="keywords" content="Roberto Guillot, Ingeniería de Sistemas, Universidad de La Guajira, Riohacha, Wayuu, Tecnología">
-    <style>
-        table, th, td {
-            border: 1px solid rgb(188, 7, 7);
-            border-spacing: 5px;
-        }
-        th, td {
-            padding: 10px 40px;
-            color: rgb(1, 1, 14);
-        }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        h1, h2 {
-            color: rgb(188, 7, 7);
-        }
-        form {
-            margin-top: 20px;
-        }
-        input[type="text"], input[type="email"] {
-            width: 100%;
-            padding: 10px;
-            margin: 8px 0;
-            box-sizing: border-box;
-        }
-        input[type="submit"] {
-            background-color: rgb(188, 7, 7);
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: rgb(150, 6, 6);
-        }
-        a {
-            color: rgb(188, 7, 7);
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Roberto Guillot</h1>
-    <h2>Sobre Mi</h2>
-    <img src="https://attic.sh/in1zugfr7m0u38g5kc5vv0eld3mj" width="200" alt="Foto de perfil">
-    <p>Soy Roberto Guillot, tengo 27 años y estudio Ingeniería de Sistemas en la Universidad de La Guajira, en Riohacha.<br>
-    Estoy orgulloso de mi descendencia wayuu y me esfuerzo por integrar mi identidad cultural con mi pasión por la tecnología.<br>
-    Me considero una persona creativa, perseverante y siempre dispuesta a aprender y crecer en todos los aspectos de mi vida.</p>
+    <header id="header">
+        <h1>Roberto Guillot</h1>
+        <h2>Sobre Mi</h2>
+    </header>
 
-    <h3>Pasatiempos favoritos:</h3>
-    <ul>
-        <li>Escuchar música</li>
-        <li>Dormir</li>
-        <li>Comer</li>
-    </ul>
+    <section id="about-me">
+        <img src="https://attic.sh/in1zugfr7m0u38g5kc5vv0eld3mj" width="200" alt="Foto de perfil">
+        <p>Soy Roberto Guillot, tengo 27 años y estudio Ingeniería de Sistemas en la Universidad de La Guajira, en Riohacha.<br>
+        Estoy orgulloso de mi descendencia wayuu y me esfuerzo por integrar mi identidad cultural con mi pasión por la tecnología.<br>
+        Me considero una persona creativa, perseverante y siempre dispuesta a aprender y crecer en todos los aspectos de mi vida.</p>
+    </section>
 
-    <h3>Hobbies:</h3>
-    <ol>
-        <li>Estudiar</li>
-        <li>Lavar ropa</li>
-        <li>Hacer oficio</li>
-    </ol>
+    <section id="interests">
+        <h3>Pasatiempos favoritos:</h3>
+        <ul class="favorites">
+            <li>Escuchar música</li>
+            <li>Dormir</li>
+            <li>Comer</li>
+        </ul>
 
-    <h3>Horario Semanal:</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>Lunes</th>
-                <th>Martes</th>
-                <th>Miércoles</th>
-                <th>Jueves</th>
-                <th>Viernes</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Viajar</td>
-                <td>Lavar</td>
-                <td>Lavar</td>
-                <td>Hacer oficio</td>
-                <td>Estudiar</td>
-            </tr>
-            <tr>
-                <td>Trabajar</td>
-                <td>Lavar</td>
-                <td>Hacer oficio</td>
-                <td>Estudiar</td>
-                <td>Comer</td>
-            </tr>
-        </tbody>
-    </table>
+        <h3>Hobbies:</h3>
+        <ol class="hobbies">
+            <li>Estudiar</li>
+            <li>Lavar ropa</li>
+            <li>Hacer oficio</li>
+        </ol>
+    </section>
 
-    <h3>Contacto:</h3>
-    <form action="#" method="post">
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre" required><br><br>
-        
-        <label for="razon">Razón de Contacto:</label><br>
-        <input type="text" id="razon" name="razon" required><br><br>
+    <section id="schedule">
+        <h3>Horario Semanal:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Viajar</td>
+                    <td>Lavar</td>
+                    <td>Lavar</td>
+                    <td>Hacer oficio</td>
+                    <td>Estudiar</td>
+                </tr>
+                <tr>
+                    <td>Trabajar</td>
+                    <td>Lavar</td>
+                    <td>Hacer oficio</td>
+                    <td>Estudiar</td>
+                    <td>Comer</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-        <label for="correo">Correo Electrónico:</label><br>
-        <input type="email" id="correo" name="correo" required><br><br>
+    <section id="contact">
+        <h3>Contacto:</h3>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            
+            <label for="razon">Razón de Contacto:</label><br>
+            <input type="text" id="razon" name="razon" required><br><br>
 
-        <input type="submit" value="Enviar">
-    </form>
+            <label for="correo">Correo Electrónico:</label><br>
+            <input type="email" id="correo" name="correo" required><br><br>
 
-    <h3>Redes Sociales:</h3>
-    <a href="https://www.facebook.com/rguillot23">Facebook</a> <br>
-    <a href="https://www.instagram.com/robertoguillot1/">Instagram</a> <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <section id="social-media">
+        <h3>Redes Sociales:</h3>
+        <a href="https://www.facebook.com/rguillot23">Facebook</a> <br>
+        <a href="https://www.instagram.com/robertoguillot1/">Instagram</a> <br>
+    </section>
 </body>
 </html>
